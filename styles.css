@@ -1,0 +1,67 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #ffdde1, #ffccf9);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Caja de la carta */
+.carta {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+}
+
+/* Encabezado y texto */
+h1 {
+    font-size: 2.5rem;
+    color: #ff4a6b;
+    margin: 0 0 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Botón */
+.boton {
+    display: inline-block;
+    background: #ff4a6b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.boton:hover {
+    background: #ff2a4f;
+    transform: scale(1.1);
+}
+
+/* Corazón animado */
+.corazon {
+    position: absolute;
+    font-size: 2rem;
+    color: #ff4a6b;
+    animation: flotar 3s infinite ease-in-out;
+}
+
+@keyframes flotar {
+    0%, 100% { transform: translateY(0); opacity: 0.8; }
+    50% { transform: translateY(-10px); opacity: 1; }
+}
